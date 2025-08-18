@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Tomxmakeover - Professional Makeup Studio" />
+    <meta
+      name="description"
+      content="Flawless beauty, expertly applied. Makeup, Gele styling, lash extensions, microblading & more at Tomxmakeover. Book your glow today."
+    />
+    <meta
+      name="keywords"
+      content="makeup studio, gele styling, lash extensions, microblading, beauty Lagos, Tomxmakeover"
+    />
+    <meta name="author" content="Tomxmakeover" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- normal -->
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Tomxmakeover</title>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav
+      class="bg-gold text-black px-7 pb-0 pt-5 flex justify-between items-center lg:mx-10 lg:my-3 xl:my-3 lg:py-0 lg:rounded-full lg:px-8"
+    >
+      <a href="#Home" class="Italianno text-6xl lg:text-5xl lg:pt-1"
+        >Tomxmakeover</a
+      >
+
+      <!-- Menu links (desktop) -->
+      <div
+        class="hidden md:flex space-x-6 Open-Sans text-black font-semibold capitalize"
+      >
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#works" class="hover:underline">Our Works</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact us</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menuBtn" class="md:hidden text-black text-2xl">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu (slide-in) -->
+    <div
+      id="mobileMenu"
+      class="fixed top-0 right-0 w-64 h-full bg-gold text-black text-2xl px-6 py-16 space-y-4 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden Open-Sans z-50"
+    >
+      <button id="closeMenu" class="text-black text-2xl absolute top-4 right-4">
+        <i class="fa fa-times"></i>
+      </button>
+      <a href="#services" class="block hover:underline">Services</a>
+      <a href="#works" class="block hover:underline">Our Works</a>
+      <a href="#about" class="block hover:underline">About</a>
+      <a href="#contact" class="block hover:underline">Contact us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="Home" class="h-screen flex flex-col lg:flex-none">
+      <h1
+        class="Cormorant-Garamond text-6xl ml-7 font-extrabold italic mt-10 lg:ml-8 lg:text-9xl lg:my-5"
+      >
+        Flawless Beauty, <br />
+        Expertly Applied
+      </h1>
+      <div
+        class="mt-2 ml-7 text-sm Open-Sans font-extralight lg:ml-8 lg:text-2xl"
+      >
+        <p>Bringing out your natural glow with</p>
+        <p>professional makeup tailored just for you.</p>
+      </div>
+      <div class="flex justify-center mt-3.5 lg:justify-start lg:ml-7 lg:mt-0">
+        <a
+          href="https://wa.me/2348012345678?text=Hello%20Tomxmakeover,%20I%20want%20to%20book%20an%20appointment"
+          target="_blank"
+          class="bg-gold mt-8 py-2 px-5 rounded-3xl text-black font-bold shadow-xl text-sm inline-block"
+        >
+          Book an Appointment
+        </a>
+      </div>
+
+      <div
+        class="flex flex-col mt-14 gap-6 items-center lg:flex-row lg:ml-7 lg:mt-7 lg:gap-3"
+      >
+        <h3 class="font-bold">FOLLOW US</h3>
+        <div class="flex gap-16 mt-1.5 lg:gap-3">
+          <a
+            href="https://wa.me/+2348081180435?text=Hello%20Tomxmakeover%20I%20want%20to%20book%20an%20appointment"
+            class="fa-brands fa-whatsapp fa-2xl text-gold cursor-pointer hover:text-gold"
+          ></a>
+          <a
+            href="https://www.instagram.com/tomxmakeover?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="fa-brands fa-instagram fa-2xl text-gold cursor-pointer hover:text-gold"
+          ></a>
+          <a
+            href="https://www.tiktok.com/@tomxmakeover?is_from_webapp=1&sender_device=pc"
+            class="fa-brands fa-tiktok fa-2xl text-gold cursor-pointer hover:text-gold"
+          ></a>
+          <a
+            href="https://t.me/+2348081180435?text=Hello%20Tomxmakeover%20I%20want%20to%20book%20an%20appointment"
+            class="fa-brands fa-telegram fa-2xl text-gold cursor-pointer hover:text-gold"
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="p-0 m-0">
+      <h1 class="text-5xl text-center font-bold Oleo-Script lg:uppercase">
+        Transformations You Can Trust
+      </h1>
+      <div class="mt-7 flex flex-wrap justify-center items-center gap-8">
+        <video class="w-80 rounded-3xl" muted autoplay loop>
+          <source src="./assets/videos/video1.mp4" type="video/mp4" />
+        </video>
+        <video class="w-80 rounded-3xl" muted autoplay loop>
+          <source src="./assets/videos/video2.mp4" type="video/mp4" />
+        </video>
+        <video class="w-80 rounded-3xl" muted autoplay loop>
+          <source src="./assets/videos/video3.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <section id="services" class="section-3 mt-5 flex justify-center flex-col">
+      <h1
+        class="Oleo-Script text-gold text-4xl text-center lg:mt-16 lg:text-5xl"
+      >
+        Our Beauty Services
+      </h1>
+
+      <div>
+        <div
+          class="mt-14 flex flex-col lg:flex-row lg:mx-40 lg:justify-center lg:gap-20 lg:items-center"
+        >
+          <div class="flex flex-col">
+            <h1
+              class="Oleo-Script capitalize text-4xl lg:text-5xl text-center lg:text-left"
+            >
+              makeup
+            </h1>
+            <p class="text-center Open-Sans lg:text-left px-6 lg:px-0">
+              Every face tells a story, and makeup helps you tell it with
+              <br class="hidden lg:block" />
+              confidence. Whether you're walking down the aisle, stepping
+              <br class="hidden lg:block" />
+              out for a special event, or simply want to look and feel your
+              <br class="hidden lg:block" />
+              best, our makeup sessions are tailored to enhance your
+              <br class="hidden lg:block" />
+              natural beauty. We don’t just apply products—we create looks
+              <br class="hidden lg:block" />
+              that turn heads and leave lasting impressions. Let your face be
+              <br class="hidden lg:block" />
+              the canvas, and let’s paint something beautiful together.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="./assets/images/Make-Up image.jpg"
+              alt="makeup image"
+              class="w-72 mt-6 lg:mt-0 lg:w-96 h-72"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-14 flex flex-col lg:flex-row-reverse lg:mx-40 lg:justify-center lg:gap-20 lg:items-center"
+        >
+          <div class="flex flex-col">
+            <h1
+              class="Oleo-Script capitalize text-4xl lg:text-5xl text-center lg:text-left"
+            >
+              gele styling
+            </h1>
+            <p class="text-center Open-Sans lg:text-left px-16 lg:p-0">
+              A gele isn’t just a headwrap—it’s tradition, identity, and
+              <br class="hidden lg:block" />
+              elegance woven into one. We understand the art and meaning
+              <br class="hidden lg:block" />behind every pleat and fold. Whether
+              you prefer bold and <br class="hidden lg:block" />
+              structured or soft and graceful, our gele styles complete your
+              <br class="hidden lg:block" />
+              look with a touch of cultural pride. Step into the room with
+              <br class="hidden lg:block" />
+              poise, power, and heritage wrapped perfectly on your crown.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="./assets/images/Gale Image.jpg"
+              alt="makeup image"
+              class="w-72 mt-6 lg:mt-15 lg:w-96 h-72"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-14 flex flex-col lg:flex-row lg:mx-40 lg:justify-center lg:gap-20 lg:items-center"
+        >
+          <div class="flex flex-col">
+            <h1
+              class="Oleo-Script capitalize text-4xl lg:text-5xl text-center lg:text-left"
+            >
+              lash extension
+            </h1>
+            <p class="text-center Open-Sans lg:text-left px-16 lg:p-0">
+              Sometimes, all it takes is the perfect set of lashes to elevate
+              <br class="hidden lg:block" />
+              your entire look. Our lash extensions are designed to frame
+              <br class="hidden lg:block" />your eyes, highlight your features,
+              and give you that effortless <br class="hidden lg:block" />wow
+              effect—day or night. No need for mascara, no stress. Just
+              <br class="hidden lg:block" />full, fluffy lashes that last and
+              leave you feeling gorgeous.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="./assets/images/Lash Extensions.jpg"
+              alt="Lash Extensions image"
+              class="w-72 mt-6 lg:mt-0 lg:w-96 h-72"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-14 flex flex-col lg:flex-row-reverse lg:mx-40 lg:justify-center lg:gap-20 lg:items-center"
+        >
+          <div class="flex flex-col">
+            <h1
+              class="Oleo-Script capitalize text-4xl lg:text-5xl text-center lg:text-left"
+            >
+              microblading
+            </h1>
+            <p class="text-center Open-Sans lg:text-left px-16 lg:p-0">
+              Imagine waking up with perfectly shaped brows—no pencil, no
+              <br class="hidden lg:block" />gel, just effortless beauty.
+              Microblading is our go-to solution
+              <br class="hidden lg:block" />for sparse, uneven, or undefined
+              brows. With delicate, hair- <br class="hidden lg:block" />like
+              strokes, we craft brows that match your facial structure<br
+                class="hidden lg:block"
+              />
+              and reflect your style. It’s not just a trend—it’s a beauty
+              <br class="hidden lg:block" />investment that keeps giving.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="./assets/images/Microblading.jpg"
+              alt="Microblading"
+              class="w-72 mt-6 lg:mt-0 lg:w-96 h-72"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-14 flex flex-col lg:flex-row lg:mx-40 lg:justify-center lg:gap-20 lg:items-center"
+        >
+          <div class="flex flex-col">
+            <h1
+              class="Oleo-Script capitalize text-4xl lg:text-5xl text-center lg:text-left"
+            >
+              microshading
+            </h1>
+            <p class="text-center Open-Sans lg:text-left px-16 lg:p-0">
+              If you're after soft, natural-looking brows with a powdery
+              <br class="hidden lg:block" />finish, microshading is the answer.
+              Ideal for all skin types, <br class="hidden lg:block" />it blends
+              precision with subtlety to give you that flawless
+              <br class="hidden lg:block" />
+              brow definition without looking too bold. Our technique ensures
+              <br class="hidden lg:block" />
+              your brows stay filled and fabulous, saving you time
+              <br class="hidden lg:block" />
+              and keeping you ready for any moment.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="./assets/images/Microshading.jpg"
+              alt="Microshading"
+              class="w-72 mt-6 lg:mt-0 lg:w-96 h-72"
+            />
+          </div>
+        </div>
+        <div class="mt-14 flex flex-col lg:mx-40 gap-2">
+          <h1
+            class="text-gold text-4xl lg:text-5xl Oleo-Script text-center capitalize"
+          >
+            our beauty kit
+          </h1>
+          <div
+            class="flex flex-col lg:gap-32 lg:flex-row lg:justify-center items-center"
+          >
+            <p class="text-center Open-Sans lg:text-left px-16 lg:px-0">
+              Every face tells a story, and makeup helps you tell it with
+              <br class="hidden lg:block" />
+              confidence. Whether you're walking down the aisle, stepping
+              <br class="hidden lg:block" />
+              out for a special event, or simply want to look and feel your
+              <br class="hidden lg:block" />
+              best, our makeup sessions are tailored to enhance your
+              <br class="hidden lg:block" />
+              natural beauty. We don’t just apply products—we create looks
+              <br class="hidden lg:block" />
+              that turn heads and leave lasting impressions. Let your face be
+              <br class="hidden lg:block" />
+              the canvas, and let’s paint something beautiful together.
+            </p>
+
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Make-up products.png"
+                alt="makeup image"
+                class="w-72 mt-6 lg:mt-0 lg:w-96 h-72"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="about"
+      class="flex flex-col justify-center items-center text-center"
+    >
+      <div class="flex lg:flex-none flex-col justify-center items-center">
+        <h1 class="capitalize Oleo-Script text-4xl text-gold">about us</h1>
+        <p class="text-center Open-Sans lg:text-center px-16 lg:px-0 lg:mx-60">
+          At [Studio Name], we believe that makeup is more than just colors and
+          brushes—it’s a powerful tool for confidence, self-expression, and
+          transformation. Every stroke of eyeliner, every blend of foundation,
+          and every touch of gloss is a step toward helping someone feel seen,
+          beautiful, and ready to take on the world.
+        </p>
+        <img
+          src="./assets/images/Fake studio background .jpg"
+          alt=""
+          class="w-72 lg:hidden block mt-4"
+        />
+      </div>
+      <div class="hidden lg:block lg:flex lg:gap-11 lg:mt-7">
+        <img
+          src="./assets/images/Fake studio background .jpg"
+          alt=""
+          class="w-72 mt-7 lg:w-96 lg:m-0 lg:h-96"
+        />
+        <p class="hidden lg:block lg:text-left">
+          Our studio was born from a passion to make women<br
+            class="hidden lg:block"
+          />
+          feel radiant, not just on the outside, but from within.<br
+            class="hidden lg:block"
+          />
+          We understand that beauty isn’t one-size-fits-all, and<br
+            class="hidden lg:block"
+          />
+          that’s why we take time to listen, understand your
+          <br class="hidden lg:block" />
+          style, and tailor every look to suit your unique
+          <br class="hidden lg:block" />
+          features and occasion. Whether you're preparing for
+          <br class="hidden lg:block" />
+          your big day, attending an event, or just treating
+          <br class="hidden lg:block" />yourself to a self-care moment—you
+          deserve a beauty <br class="hidden lg:block" />experience that’s
+          thoughtful, flawless, and <br class="hidden lg:block" />unforgettable.
+          <br class="hidden lg:block" />
+          From the art of gele styling that celebrates tradition,
+          <br class="hidden lg:block" />to lash extensions that elevate your
+          everyday look, to <br class="hidden lg:block" />precision techniques
+          like microblading and<br class="hidden lg:block" />
+          microshading that perfect your natural features—we<br
+            class="hidden lg:block"
+          />
+          don’t just offer services, we craft experiences. Every
+          <br class="hidden lg:block" />
+          client that walks through our doors is treated with
+          <br class="hidden lg:block" />care, skill, and professionalism.
+        </p>
+      </div>
+      <p
+        class="hidden lg:block text-center Open-Sans lg:text-center px-16 lg:px-0 lg:mx-60 mt-7"
+      >
+        With a growing reputation built on trust, referrals, and happy faces,
+        [Studio Name] continues to be a beauty destination for those who want
+        more than makeup—they want magic. We can’t wait to meet you, learn your
+        style, and help you glow with confidence.
+      </p>
+    </section>
+
+    <section
+      id="contact"
+      class="mx-16 mt-16 px-5 py-5 flex flex-col justify-center items-center rounded-4xl lg:mx-56 lg:px-10 lg:py-10"
+    >
+      <h1 class="Oleo-Script text-black text-4xl">Contact Us</h1>
+      <p class="hidden lg:block text-black lg:text-center Open-Sans">
+        Have questions or ready to glow? We’re here to help! Whether you’re
+        planning for a big day, a casual glam-up, or just want to ask about our
+        services, don’t hesitate to reach out. We’ll walk with you every step of
+        the way.
+      </p>
+      <div
+        class="flex flex-col lg:flex-row justify-start items-start text-black lg:gap-40 lg:mt-5"
+      >
+        <div class="flex flex-col lg:gap-2.5 Open-Sans">
+          <p class="font-bold">
+            <i class="fa-solid fa-phone" style="color: #fafafa"></i>Phone:
+            <span class="font-semibold">08081180435</span>
+          </p>
+          <p class="font-bold">
+            <i class="fa-solid fa-location-dot" style="color: #ff0000"></i
+            >Address:
+            <span class="font-semibold"
+              >31 Odunjo Street Aguda Surulere Lagos</span
+            >
+          </p>
+        </div>
+        <div class="flex flex-col lg:gap-2.5 Open-Sans">
+          <p class="font-bold">
+            <i class="fa-brands fa-whatsapp" style="color: #07c500"></i
+            >WhatsApp: <span class="font-semibold">08081180435</span>
+          </p>
+          <p class="font-bold">
+            <i class="fa-brands fa-instagram" style="color: #ff00c8"></i
+            >Instagram: <span class="font-semibold">@tomxmakeover</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="flex flex-col justify-center items-center border-t-2 bor mt-32 border-white"
+    >
+      <div class="mt-5 text-center lg:flex lg:gap-64 pt-5">
+        <div class="flex flex-col">
+          <h1 class="Italianno text-gold text-4xl text-center p-0">
+            Tomxmakeover
+          </h1>
+          <p class="Oleo-Script">
+            Let’s make magic happen—one brushstroke at a time
+          </p>
+        </div>
+        <div class="mt-10 lg:mt-0">
+          <h3 class="Oleo-Script text-2xl">Our Working Hours</h3>
+          <p class="font-semibold">
+            Tuesday - Saturday <span class="font-normal">8:30AM - 7:00PM</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-5 text-center capitalize Open-Sans mt-4 lg:flex-row lg:gap-16"
+      >
+        <a href="">our works</a>
+        <a href="">about us</a>
+        <a href="">our services</a>
+        <a href="">contact us</a>
+      </div>
+      <div class="flex gap-16 mt-7 mb-7 lg:mt-10 lg:mb-20">
+        <a
+          href="https://wa.me/+2348081180435?text=Hello%20Tomxmakeover%20I%20want%20to%20book%20an%20appointment"
+          class="fa-brands fa-whatsapp fa-2xl text-white cursor-pointer hover:text-gold"
+        ></a>
+        <a
+          href="https://www.instagram.com/tomxmakeover?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          class="fa-brands fa-instagram fa-2xl text-white cursor-pointer hover:text-gold"
+        ></a>
+        <a
+          href="https://www.tiktok.com/@tomxmakeover?is_from_webapp=1&sender_device=pc"
+          class="fa-brands fa-tiktok fa-2xl text-white cursor-pointer hover:text-gold"
+        ></a>
+        <a
+          href="https://t.me/+2348081180435?text=Hello%20Tomxmakeover%20I%20want%20to%20book%20an%20appointment"
+          class="fa-brands fa-telegram fa-2xl text-white cursor-pointer hover:text-gold"
+        ></a>
+      </div>
+      <div class="bg-gold w-screen text-center text-black font-bold">
+        <h1>&copy; 2025. All Rights Reserved.</h1>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
