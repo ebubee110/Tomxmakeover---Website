@@ -43,3 +43,10 @@ body {
 #contact {
   background: rgba(187, 187, 187, 0.33);
 }
+
+.bg-makeup {
+  background-image: url('/assets/images/image.png');
+  background-size: 700px; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}

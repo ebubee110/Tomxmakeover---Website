@@ -675,6 +675,11 @@
       border-radius: calc(infinity * 1px);
     }
   }
+  .lg\:bg-black {
+    @media (width >= 64rem) {
+      background-color: var(--color-black);
+    }
+  }
   .lg\:p-0 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 0);
